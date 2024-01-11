@@ -1,4 +1,5 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+import formsPlugin from '@tailwindcss/forms';
 
 const config: Config = {
   content: [
@@ -13,8 +14,23 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      animation: {
+        'fade-in': 'fadeIn ease-in-out 2s',
+        'fade-in2': 'fadeIn ease-in-out 5s',
+      },
+      keyframes: {
+        fadeIn: {
+          from: {
+            opacity: "0",
+          },
+          to: {
+            opacity: "1",
+          },
+        },
+      },
     },
   },
-  plugins: [],
-}
-export default config
+  plugins: [formsPlugin],
+};
+
+export default config;
