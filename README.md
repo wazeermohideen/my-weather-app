@@ -32,7 +32,7 @@ Weather icons used in this app are provided by TBD
 
 # Tech Stack 💻
 
-WeatherWiz is built with a robust tech stack to deliver a seamless user experience:
+My Weather App is built with a robust tech stack to deliver a seamless user experience:
 
 - **NextJS:** The foundation for this app, providing efficient and performant React applications.
 - **TypeScript:** Enhancing code quality and maintainability with static typing.
